@@ -115,6 +115,7 @@ void MainWindow::zaladujPlik(){
        }
     }
     if(lista.size()>0)
+        delete lista.last();
         lista.pop_back();
     }
     plik.close();
@@ -583,4 +584,3 @@ void MainWindow::on_lineEdit_8_textChanged(const QString &arg1)
         this->on_tabWidget_tabBarClicked(2);
     }
 }
-
